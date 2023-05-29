@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class= boton>
+    <ion-title>SELECCIONA EL ESPACIO COMUN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item lines="none">
+  <ion-select aria-label="espacio comun" placeholder="Seleccione espacio comun">
+  <ion-select-option value="Gym">Gimnasio</ion-select-option>
+  <ion-select-option value="Quincho">Quincho</ion-select-option>
+  <ion-select-option value="Sala de eventos">Sala de eventos</ion-select-option>
+  <ion-select-option value="Piscina">Piscina</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-img src="assets/images/espacio-comun.jpg"></ion-img>
+
+<ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal lines="none" [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal >
+
+
+<ion-item class="ion-margin-top">
+</ion-item>
+
+<ion-button lines="none" (click)="presentAlert()">Click Me</ion-button>
+
+<ion-buttons slot="end">
+
+  <ion-icon name="log-out-outline"></ion-icon>
+
+    <ion-icon name="log-in-outline" slot="icon only" class="icon log-in-outline "></ion-icon>
+
+</ion-buttons>
